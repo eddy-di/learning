@@ -36,6 +36,7 @@ print(10*3)
 print(10/3)
 print(10//3)
 print(10 % 3)
+
 print(10**3)
 print(round(5.5))
 print(abs(-5.5))
@@ -46,5 +47,6 @@ print(math.comb(7, 5))
 print(math.copysign(7, 5))
 
 x = input("x: ")
-y = int(x) + 1
+y = int(x) + 2
+
 print(f"x: {x}, y: {y}")
