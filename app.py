@@ -49,5 +49,6 @@ print(math.copysign(7, 5))
 x = input("x: ")
 y = int(x) + 2
 y = 5
+k = 10
 
 print(f"x: {x}, y: {y}")
