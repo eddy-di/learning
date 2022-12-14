@@ -1,0 +1,11 @@
+import datetime
+functiontime = datetime.datetime.now()
+
+
+def greet():
+    print("It's %s:%s:%s" %
+          (functiontime.hour, functiontime.minute, functiontime.second))
+    print("Hello, and welcome aboard!")
+
+
+greet()
