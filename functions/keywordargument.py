@@ -1,4 +1,6 @@
-def increment (number, by):
+def increment (number, by=1):
+    #in this case, the by+1 parameter is optional and 
+    #on line 6 you can not define or write it will automatically put 1
     return number + by
 
 
