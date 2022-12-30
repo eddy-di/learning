@@ -5,9 +5,7 @@ items = [
 ]
 
 
-def sort_item(item):
-    return item[1]
-
-
-items.sort(reverse=True, key=sort_item)
+items.sort(reverse=True, key=lambda item:item[1])
+# Here the lambda function is used "key=lambda item:item[1]" and 
+# it is used instead of creating new function like in previous version with def sort_item etc.
 print(items)
