@@ -29,9 +29,9 @@ print("Your mission is to find the treasure.")
 choice1 = input(
     'You are at a crossroad. Where do you want to go? Type "left" or "right".\n').lower()
 if choice1 == "left":
-    choice2 = input('''You've come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across. \n''')
+    choice2 = input('''You've come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across. \n''').lower()
 else:
-    print("You've fallen into a hole. Game over.").lower()
+    print("You've fallen into a hole. Game over.")
 if choice2 == "wait":
     choice3 = input('You arrive at the island unharmed. There is a house with three doors. Red, yellow and blue. Which color do you choose? \n').lower()
 else:
