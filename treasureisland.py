@@ -27,24 +27,20 @@ print("Your mission is to find the treasure.")
 
 #Write your code below this line 👇
 choice1 = input(
-    'You are at a crossroad. Where do you want to go? Type "left" or "right".\n')
-choice2 = input('''You've come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across. \n''')
-choice3 = input('You arrive at the island unharmed. There is a house with three doors. Red, yellow and blue. Which color do you choose? \n')
-if choice1 == "left" or choice1 == "Left":
-    print(choice2)
+    'You are at a crossroad. Where do you want to go? Type "left" or "right".\n').lower()
+if choice1 == "left":
+    choice2 = input('''You've come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across. \n''')
 else:
-    print("You've fallen into a hole. Game over.")
-
-if choice2 == "wait" or choice2 == "Wait":
-    print(choice3)
+    print("You've fallen into a hole. Game over.").lower()
+if choice2 == "wait":
+    choice3 = input('You arrive at the island unharmed. There is a house with three doors. Red, yellow and blue. Which color do you choose? \n').lower()
 else:
     print("Trout attacked you. Game over.")
-
-if choice3 == "yellow" or choice3 == "Yellow":
+if choice3 == "yellow":
     print("You found the treasure! You win!")
-elif choice3 == "red" or choice3 == "Red":
+elif choice3 == "red":
     print("House got caught in fire. Game over.")
-elif choice3 == "blue" or choice3 == "Blue":
+elif choice3 == "blue":
     print("You've met lots of scary and strong monsters. Game over.")
 else:
     print("Game over.")
