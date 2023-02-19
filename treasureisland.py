@@ -1,0 +1,50 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+choice1 = input(
+    'You are at a crossroad. Where do you want to go? Type "left" or "right".\n')
+choice2 = input('''You've come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across. \n''')
+choice3 = input('You arrive at the island unharmed. There is a house with three doors. Red, yellow and blue. Which color do you choose? \n')
+if choice1 == "left" or choice1 == "Left":
+    print(choice2)
+else:
+    print("You've fallen into a hole. Game over.")
+
+if choice2 == "wait" or choice2 == "Wait":
+    print(choice3)
+else:
+    print("Trout attacked you. Game over.")
+
+if choice3 == "yellow" or choice3 == "Yellow":
+    print("You found the treasure! You win!")
+elif choice3 == "red" or choice3 == "Red":
+    print("House got caught in fire. Game over.")
+elif choice3 == "blue" or choice3 == "Blue":
+    print("You've met lots of scary and strong monsters. Game over.")
+else:
+    print("Game over.")
