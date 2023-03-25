@@ -11,3 +11,4 @@ class Human:
 human1 = Human(166, "dark", "brown")
 human1.who()
 human2 = Human(178, "blonde", "blue")
+human2.who()
