@@ -9,5 +9,7 @@ class Product:
             raise ValueError("Price cannot be negative.")
         self.__price = value
 # one of the ways of implementing a code. But this way is considered as a bit noisy and not pythonic
-product = Product(-100)
-print(product.__price)
+    price = property(get_price, set_price) # this is considered as more pythonic in a sense
+
+product = Product(100)
+print(product.price)
