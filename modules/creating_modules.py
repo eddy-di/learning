@@ -4,5 +4,7 @@ import mod1
 mod1.calc_shipping()
 mod1.calc_tax()
 
+# after opening of the file in terminal the __pycache__ appers, it is necessary to access faster to the imported modules
+
 calc_tax()
 calc_shipping()
