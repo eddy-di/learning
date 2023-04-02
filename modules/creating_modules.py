@@ -1,5 +1,6 @@
 from modes.mod1 import calc_shipping, calc_tax
 import modes.mod1
+from .modes import mod1 # this is called as intra-package referencing, and is used if there are too many files with different names and so on
 # or u can also import in a different fashion
 # packages and the way how to access them when you move modules to another file, need to create __init__.py file for a better functionality
 from modes import mod1
