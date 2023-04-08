@@ -1,0 +1,12 @@
+import datetime
+functiontime = datetime.datetime.now()
+
+
+def greet(first_name, last_name):
+    print("It's %s:%s:%s" %
+          (functiontime.hour, functiontime.minute, functiontime.second))
+    print(f"Hello, {first_name} {last_name} and welcome aboard!")
+
+
+greet("Eldiiar", "Mirlanov")
+greet("Nakylai", "Taiirova")
