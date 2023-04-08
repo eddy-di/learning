@@ -18,3 +18,4 @@ with sqlite3.connect(r"Libraries\inlib\db.sqlite3") as conn:
     #     print(row) # result will be in tuples
     movies = cursor.fetchall()
     print(movies) # this result gives list of tuples
+    # lines from 14-20 show two possible ways of reading data from db
